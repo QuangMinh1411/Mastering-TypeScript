@@ -4,5 +4,7 @@ function greet(person:string){
 function square(num:number){
     return num*num;
 }
+const doSomething = (person:string,age:number,isFunny:boolean)=>{
+}
 square(4.5);
 greet('Quang');
