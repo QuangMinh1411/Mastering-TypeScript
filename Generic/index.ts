@@ -41,3 +41,25 @@ printDoubleLength("Hello");
 function makeEmptyArray<T=number>():T[]{
     return [];
 }
+const nums = makeEmptyArray();
+const bools = makeEmptyArray<boolean>();
+
+interface Song {
+    title:string;
+    artirs:string;
+};
+interface Video {
+    title:string;
+    creator:string;
+    resolution:string;
+}
+
+class Playlist<T> {
+    public queue: T[];
+    add(el:T){
+        this.queue.push(el);
+    }
+}
+
+const songs =  new Playlist<Song>();
+const videos = new Playlist<Video>();
