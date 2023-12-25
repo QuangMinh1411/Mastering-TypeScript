@@ -1,5 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const utils_1 = require("./utils");
-(0, utils_1.sample)([12, 3, 45]);
-(0, utils_1.add)(3, 5);
+import { add, sample as sampleRandom } from "./utils.js";
+import User from "./User.js";
+console.log(sampleRandom([12, 3, 45]));
+console.log(add(3, 5));
+const user = new User("quang", "qm@yahoo.com");
+user.logout();
